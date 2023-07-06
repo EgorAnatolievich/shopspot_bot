@@ -1,7 +1,7 @@
 
 # Telegram Bot for Selling Goods
 
-![Telegram Logo](Telegram_logo.svg)
+![Telegram Logo](Telegram_logo.svg.png)
 
 Telegram Bot for Selling Goods is a project written in Go that includes a web application for selling goods. Payment systems are integrated, and the purchase of goods is implemented through the bot menu button.
 
