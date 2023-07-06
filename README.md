@@ -1,40 +1,37 @@
+# Телеграмм бот для продажи товаров
 
-# Telegram Bot for Selling Goods
+![Логотип Телеграмма](telegram_logo.png)
 
-![Telegram Logo](Telegram_logo.svg.png)
+Телеграмм бот для продажи товаров - это проект, написанный на языке Go, который включает в себя веб-приложение для продажи товаров. В проекте реализована интеграция платежных систем, а покупка товаров осуществляется через специальную кнопку меню бота.
 
-Telegram Bot for Selling Goods is a project written in Go that includes a web application for selling goods. Payment systems are integrated, and the purchase of goods is implemented through the bot menu button.
+[![Лицензия](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-green.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-green.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+## О проекте
 
-## About the Project
+Этот проект представляет собой Телеграмм бот, разработанный на языке Go. Он предназначен для запуска веб-приложения для продажи товаров с интегрированными платежными системами. Бот позволяет пользователям просматривать каталог товаров, выбирать и покупать товары через удобное меню.
 
-This project is a Telegram bot developed in Go language. It is designed to launch a web application for selling goods with integrated payment systems. The bot allows users to browse the product catalog, select and purchase items through a convenient menu.
+## Особенности
 
-## Features
+- Реализация веб-приложения для продажи товаров.
+- Интеграция с платежными системами для приема платежей.
+- Возможность покупки товаров через кнопку меню бота.
 
-- Implementation of a web application for selling goods.
-- Integration with payment systems for accepting payments.
-- Ability to purchase goods through the bot menu button.
+## Установка и настройка
 
-## Installation and Setup
-
-1. Clone the repository on your local machine:
+1. Склонируйте репозиторий на своем локальном компьютере:
 git clone https://github.com/your-username/your-repo.git
 
-2. Install the necessary dependencies:
+2. Установите необходимые зависимости:
 go mod download
 
+3. Укажите настройки базы данных и платежной системы в файле `config.yml`.
 
-3. Specify the database and payment system settings in the `config.yml` file.
-
-4. Run the web application and the bot:
+4. Запустите веб-приложение и бота:
+go run main.go
+go run telegrambot.go
 go run main.go
 go run telegrambot.go
 
 
-5. Open the bot in Telegram and start using its features.
 
-## License
 
-This project is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
