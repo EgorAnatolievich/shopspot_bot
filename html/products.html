@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+/* Стили для экранов с шириной до 768 пикселей */
+/* Настроить отображение товаров в виде одного столбца */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+/* Стили для экранов с шириной от 769 до 1024 пикселей */
+/* Настроить отображение товаров в виде двух столбцов */
+}
+
+@media (min-width: 1025px) {
+/* Стили для экранов с шириной более 1024 пикселей */
+/* Настроить отображение товаров в виде трех столбцов */
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Ваши стили CSS */
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 78%;
+            margin-right: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-details {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .add-button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-button {
+            background-color: #228B22;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    {{range .}}
+    <div class="product">
+        <div class="product-image">
+            <img src="{{.Photo}}" alt="{{.Name}}">
+        </div>
+        <div class="product-details">
+            <div class="product-name">{{.Name}}</div>
+            <div class="product-price">{{.Price}}</div>
+            <button class="add-button">Add</button>
+        </div>
+    </div>
+    {{end}}
+
+    <button class="order-button">Перейти к заказу</button>
+</div>
+</body>
+</html>
